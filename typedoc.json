@@ -1,0 +1,14 @@
+{
+  "entryPoints": [
+    "src"
+  ],
+  "entryPointStrategy": "expand",
+  "exclude": [
+    "**/*.spec.ts",
+    "node_modules/**"
+  ],
+  "out": "./dist/docs/api/",
+  "name": "Documentación Técnica - Adrián Pérez Poleo",
+  "readme": "README.md",
+  "cleanOutputDir": true
+}
