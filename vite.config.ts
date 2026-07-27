@@ -2,7 +2,7 @@ import { resolve } from 'path';
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  base: '/',
+  base: '/adrian-perez-interactive-applications/',
   build: {
     rollupOptions: {
       input: {
@@ -15,7 +15,12 @@ export default defineConfig({
         projectile: resolve(__dirname, 'src/visualizers/projectile-animation/perez-poleo-adrian-projectile-animation.html'),
         lissajous: resolve(__dirname, 'src/visualizers/lissajous-curves/perez-poleo-adrian-lissajous-curves.html'),
         
-        umlMenu: resolve(__dirname, 'docs/uml/index.html')
+        umlMenu: resolve(__dirname, 'docs/uml/index.html'),
+        umlBalatro: resolve(__dirname, 'docs/uml/uml-balatro.html'),
+        umlHangman: resolve(__dirname, 'docs/uml/uml-hangman.html'),
+        umlLissajous: resolve(__dirname, 'docs/uml/uml-lissajous.html'),
+        umlProjectile: resolve(__dirname, 'docs/uml/uml-projectile.html'),
+        umlTrapezoidal: resolve(__dirname, 'docs/uml/uml-trapezoidal.html'),
       },
     },
   },
