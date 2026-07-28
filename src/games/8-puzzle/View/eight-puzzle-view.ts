@@ -42,11 +42,7 @@ export class EightPuzzleView {
     this.board = document.getElementById('board') as HTMLDivElement;
 
     const fixedGrid = document.createElement('div');
-    fixedGrid.classList.add('fixed-grid', 'has-3-cols');
-
-    fixedGrid.style.width = '100%';
-    fixedGrid.style.maxWidth = '800px';
-    fixedGrid.style.margin = '0 auto';
+    fixedGrid.classList.add('fixed-grid', 'has-3-cols', 'puzzle-board');
 
     const gridInner = document.createElement('div');
     gridInner.classList.add('grid', 'is-gapless');
@@ -85,7 +81,7 @@ export class EightPuzzleView {
     pieces.forEach((pieceNumber, index) => {
       const cell = this.cells[index];
       cell.innerText = '';
-      cell.className = 'cell';
+      cell.className = 'cell puzzle-cell';
  
       if (pieceNumber === 0) {
         cell.style.backgroundImage = 'none';
@@ -108,7 +104,7 @@ export class EightPuzzleView {
     pieces.forEach((pieceNumber, index) => {
       const cell = this.cells[index];
       cell.innerText = '';
-      cell.className = 'cell';
+      cell.className = 'cell puzzle-cell';
  
       if (pieceNumber === 0) {
         cell.style.backgroundImage = 'none';
@@ -191,12 +187,8 @@ export class EightPuzzleView {
    */
   private createCell(): HTMLDivElement {
     const cell = document.createElement('div');
-    cell.classList.add('cell');
+    cell.classList.add('cell', 'puzzle-cell');
     
-    cell.style.minHeight = '150px';
-    cell.style.aspectRatio = '1/1';
-    cell.style.cursor = 'pointer';
-
     cell.innerText = 'Cell';
     return cell;
   }

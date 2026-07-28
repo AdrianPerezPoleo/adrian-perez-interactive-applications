@@ -1,76 +1,86 @@
 <!--  
    Universidad de La Laguna
-	 Escuela Superior de Ingeniería y Tecnología
-	 Grado en Ingeniería Informática
-	 Programación de Aplicaciones Interactivas
+   Escuela Superior de Ingeniería y Tecnología
+   Grado en Ingeniería Informática
+   Programación de Aplicaciones Interactivas
 
    @author Adrián Pérez Poleo
    @since May 07, 2026
-	 @description Lab assignment 14 - Evaluation Session
+   @description Lab assignment 14 - Evaluation Session
 -->
 
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-	  <link rel="stylesheet" href="/src/ULL-styles.scss">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/src/ULL-styles.scss">
     <script type="module" src="8-puzzle-client.ts"></script>
     <title>Adrián Pérez Poleo - Assignment 14 - Evaluation Session</title>
   </head>
-  <body>
   
-  <section class="hero is-fullheight">
-
-   <div class="hero-head has-background-ull-purple p-4">
-    <nav class="level is-mobile">
-      <div class="level-left">
-        <div class="level-item"></div>
-      </div>
-
-      <div class="level-item">
-        <p class="title has-text-white">8 PUZZLE</p>
-      </div>
-
-      <div class="level-right">
-        <div class="level-item">
-          <a class="button is-primary" href="../../../index.html">HOME</a>
-        </div>
-      </div>
-    </nav>
-  </div>
-
-  <div class="hero-body p-0 has-background-puzzle-blue">
-    <div class="container is-fluid p-0">
-      <div class="columns is-gapless is-vcentered">
+  <body style="overflow: hidden;">
+    <section class="hero is-fullheight">
       
-        <div class="column is-narrow sidebar-column">
-          <img src="/public/images/puzzle/1-8Puzzle-Tiggre-imgs/PicturesMenu.png" class="sidebar-img">
-        </div>
-  
-        <div class="column">
-          <div class="container">
-            <div id="board" class="mb-5"></div>
-  
-            <div class="has-text-centered">
-              <label class="checkbox mb-4">
-                <input id="checkbox" type="checkbox">
-                <span class="has-text-weight-bold">Show numbers</span>
-              </label>
-  
-              <div class="buttons is-centered mt-2">
-                <button class="button is-medium is-link" id="shuffle">Shuffle</button>
-                <button class="button is-medium is-success" id="solve">Solve</button>
+      <div class="hero-head has-background-ull-purple p-4">
+        <nav class="level is-mobile">
+          
+          <div class="level-left">
+            <div class="level-item"></div>
+          </div>
+
+          <div class="level-item">
+            <p class="title has-text-white">8 PUZZLE</p>
+          </div>
+
+          <div class="level-right">
+            <div class="level-item">
+              <a class="button is-primary" href="../../../index.html">HOME</a>
+            </div>
+          </div>
+          
+        </nav>
+      </div>
+
+      <div class="hero-body p-0 has-background-puzzle-blue">
+        <div class="container is-fluid p-0">
+          <div class="columns is-gapless is-vcentered">
+          
+            <div class="column is-narrow sidebar-column">
+              <img src="/public/images/puzzle/1-8Puzzle-Tiggre-imgs/PicturesMenu.png" class="sidebar-img" alt="Puzzle Menu">
+            </div>
+      
+            <div class="column">
+              <div class="container">
+                <div id="board" class="mb-5"></div>
+      
+                <div class="has-text-centered">
+                  <label class="checkbox mb-4">
+                    <input id="checkbox" type="checkbox">
+                    <span class="has-text-weight-bold">Show numbers</span>
+                  </label>
+      
+                  <div class="buttons is-centered mt-2">
+                    <button class="button is-medium is-link" id="shuffle">Shuffle</button>
+                    <button class="button is-medium is-success" id="solve">Solve</button>
+                  </div>
+                </div>
               </div>
             </div>
-  
-            </div>
+      
+          </div>
         </div>
-  
       </div>
-    </div>
-  </div>
-  </div>
-  
-</section>
+      
+    </section>
+
+    <footer class="footer pt-2 pb-5 fixed-footer">
+      <div class="content has-text-centered">
+        <p>
+          Grado en Ingeniería Informática | Programación de Aplicaciones Interactivas | Adrián Pérez Poleo (alu0101635224@ull.edu.es)
+        </p>
+      </div>
+    </footer>
+    
   </body>
 </html>
