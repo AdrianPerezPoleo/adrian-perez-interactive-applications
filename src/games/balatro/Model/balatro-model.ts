@@ -97,8 +97,11 @@ export class BalatroModel {
    * @return True if the card could be selected. False otherwise.
    */
   selectCard(card: Card): boolean {
-    return this.player.selectCard(card);
+  if (this.player.getSelectedCards().length >= this.currentLevel.maximumSelectedCards) {
+    return false;
   }
+  return this.player.selectCard(card);
+}
 
   /**
    * Removes the selection of a card.

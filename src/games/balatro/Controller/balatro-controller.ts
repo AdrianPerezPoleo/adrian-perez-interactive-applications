@@ -75,17 +75,17 @@ export class BalatroController {
    */
   private handlePlayEvent(): void {
     this.model.playHand();
-
     this.view.updateNeededPoints(this.model.getCurrentNeededPoints());
     this.view.updateSelectedCards(this.model.getNumberOfSelectedCards());
-
     this.view.removeAllHighlights();
     this.displayHand();
     this.view.updateDeckSize(this.model.getDeckSize());
-    this.view.updateActionPanelInformation(this.model.getRemainingHands(), this.model.getTotalAllowedHands(), 
-        this.model.getRemainingDiscards(), this.model.getTotalAllowedDiscards());
+    this.view.updateActionPanelInformation(this.model.getRemainingHands(), this.model.getTotalAllowedHands(),
+         this.model.getRemainingDiscards(), this.model.getTotalAllowedDiscards());
+       
+    this.view.updatePreview({handName: 'PREVIEW', chips: 0, multiplier: 0, totalScore: 0});
   }
-
+  
   /**
    * Handles the Discard Event.
    */
@@ -94,10 +94,12 @@ export class BalatroController {
     this.model.discardSelectedCards();
     this.displayHand();
     this.view.updateDeckSize(this.model.getDeckSize());
-
-    this.view.updateActionPanelInformation(this.model.getRemainingHands(), this.model.getTotalAllowedHands(), 
-        this.model.getRemainingDiscards(), this.model.getTotalAllowedDiscards());
-  } 
+    this.view.updateActionPanelInformation(this.model.getRemainingHands(), this.model.getTotalAllowedHands(),
+         this.model.getRemainingDiscards(), this.model.getTotalAllowedDiscards());
+       
+    this.view.updateSelectedCards(this.model.getNumberOfSelectedCards());
+    this.view.updatePreview({handName: 'PREVIEW', chips: 0, multiplier: 0, totalScore: 0});
+  }
 
   /**
    * Handles the Sort event.

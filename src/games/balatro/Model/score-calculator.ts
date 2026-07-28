@@ -143,11 +143,13 @@ export class ScoreCalculator {
    * @return Score obtained with the straight if it exists or null. 
    */
   private evaluateStraight(): HandScore | null {
-    const orderWithLowAce = ['ace', ...BalatroRules.VALUE_ORDER];
+    const validValues = BalatroRules.VALUE_ORDER.filter(v => v !== 'empty');
+    const orderWithLowAce = ['ace', ...validValues];
     const reversedOrder = orderWithLowAce.reverse();
+  
     let consecutiveCount = 0;
     let chipsSum = 0;
-
+  
     for (const value of reversedOrder) {
       if (this.counts[value] >= 1) {
         ++consecutiveCount;

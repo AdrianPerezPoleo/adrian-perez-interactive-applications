@@ -28,12 +28,12 @@ export class LevelInformationDisplay {
     columnsDiv.className = 'columns';
     container.appendChild(columnsDiv);
 
-    this.buildTextColumn(columnsDiv, 'is-4', 'has-text-white', 'Level 1: Small Blind');
+    this.buildTextColumn(columnsDiv, 'is-3', 'has-text-white', 'Level 1: Small Blind');
     this.buildTextColumn(columnsDiv, 'is-2', 'has-text-cyan', 'Money: $5');
     this.buildTextColumn(columnsDiv, 'is-2', 'has-text-white', 'Round: 1');
     this.deckText = this.buildTextColumn(columnsDiv, 'is-3', 'has-text-purple', 'Deck: 44/52 cards');
     
-    this.buildHelpButton(columnsDiv);  
+    this.buildHomeButton(columnsDiv);  
   }
 
   /**
@@ -68,21 +68,23 @@ export class LevelInformationDisplay {
   }
 
   /**
-   * Creqates a button with an interrogation mark.
-   * @param parent Container where the butto will be placed.
+   * Creates the HOME button.
+   * @param parent Container where the button will be placed.
    * @return Button that has been created. 
    */
-  private buildHelpButton(parent: HTMLElement): HTMLButtonElement {
+  private buildHomeButton(parent: HTMLElement): HTMLAnchorElement {
     const column = document.createElement('div');
-    column.className = 'column';
+    column.className = 'column is-2';
 
-    const button = document.createElement('button');
-    button.className = 'button has-background-ull-purple is-medium has-text-danger';
-    button.innerText = '?';
+    const homeLink = document.createElement('a');
+    homeLink.href = '../../../index.html';
 
-    column.appendChild(button);
+    homeLink.className = 'button has-background-ull-purple has-text-white mt-1';
+    homeLink.innerHTML = 'HOME';
+
+    column.appendChild(homeLink);
     parent.appendChild(column);
 
-    return button;
+    return homeLink;
   }
 }
