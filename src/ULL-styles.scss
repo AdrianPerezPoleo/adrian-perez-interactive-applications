@@ -97,3 +97,39 @@ $custom-colors: (
   overflow-x: auto; 
   overflow-y: auto
 }
+
+.fixed-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+body {
+  padding-bottom: 100px; 
+}
+
+/* Clases del 8-puzzle */
+.puzzle-board {
+  width: 100%;
+  max-width: min(100%, 60vh);
+  margin: 0 auto;
+}
+
+.puzzle-cell {
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  cursor: pointer;
+}
+
+.sidebar-column {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.sidebar-img {
+  max-height: 90vh;
+  width: auto;
+  object-fit: contain;
+}

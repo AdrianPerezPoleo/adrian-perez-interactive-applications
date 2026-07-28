@@ -3,6 +3,14 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
   base: '/adrian-perez-interactive-applications/',
+  css: {
+    preprocessorOptions: {
+      scss: {
+        // @ts-expect-error: La propiedad 'api' es válida para acelerar Sass, aunque falte en los tipos
+        api: 'modern-compiler'
+      }
+    }
+  },
   build: {
     rollupOptions: {
       input: {
