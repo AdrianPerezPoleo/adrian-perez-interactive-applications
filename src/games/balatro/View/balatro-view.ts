@@ -70,7 +70,6 @@ export class BalatroView {
 
   /**
    * Displays the hand of jokers the user is playing with.
-   * @param hand Jokers the user is playing with.
    */
   displayInventory(jokers: Card[], consumables: Card[]): void {
     this.inventoryDisplay.displayJokers(jokers);

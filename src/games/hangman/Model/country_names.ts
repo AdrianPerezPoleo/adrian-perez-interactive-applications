@@ -5,7 +5,6 @@
  * Programación de Aplicaciones Interactivas
  * @author Adrián Pérez Poleo
  * @since Apr 25, 2026
- * @description ENumeration of countries in spanish.
  */
 
 export enum CountryNamesInSpanish {

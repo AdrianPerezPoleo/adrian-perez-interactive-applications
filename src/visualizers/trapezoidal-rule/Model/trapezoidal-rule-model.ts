@@ -33,8 +33,6 @@ export class TrapezoidalRuleModel {
 
   /**
    * Returns the points we obtain when evaluating the function in a given range.
-   * @param startValue First value we will evaluate the function with.
-   * @param endValue Last value we will evaluate the function with.
    * @return Points result of the evaluation of the function in the given range.
    */
   calculateFunctionPoints(): Point[] {

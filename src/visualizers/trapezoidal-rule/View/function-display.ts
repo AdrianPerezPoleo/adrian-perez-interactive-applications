@@ -128,8 +128,6 @@ export class FunctionDisplay {
 
   /**
    * Updates the limits in the Y axis using the highest and lowest trapezoid vertices.
-   * @param minimumXValue New minimum Y value.
-   * @param maximumXValue New maximum Y value.
    */
   updateYLimitsUsingTrapezoidVertices(functionPoints: Point[]): void {
     if (functionPoints.length === 0) return;

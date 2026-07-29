@@ -79,7 +79,7 @@ export class TrapezoidalRuleView {
 
   /**
    * Displays the vertices of the trapezoids used in the application
-   * @param vertices Vertices of the trapezoids used to calculate the integral.
+   * @param trapezoidVertices Vertices of the trapezoids used to calculate the integral.
    */
   displayTrapezoids(trapezoidVertices: Point[]): void {
     this.functionDisplay.displayTrapezoidVertices(trapezoidVertices);

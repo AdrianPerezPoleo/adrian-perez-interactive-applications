@@ -5,7 +5,6 @@
  * Programación de Aplicaciones Interactivas
  * @author Adrián Pérez Poleo
  * @since Apr 29, 2026
- * @description Class that displays the needed points to win the game.
  */
 
 export class ScoreDisplay {

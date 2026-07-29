@@ -5,7 +5,6 @@
  * Programación de Aplicaciones Interactivas
  * @author Adrián Pérez Poleo
  * @since May 09, 2026
- * @desc Class that displays the sum of areas of the displayed trapezoids.
  */
 
 export class ResultDisplay {

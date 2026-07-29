@@ -5,7 +5,6 @@
  * Programación de Aplicaciones Interactivas
  * @author Adrián Pérez Poleo
  * @since Apr 25, 2026
- * @description Class that displays if the game was won or lost.
  */
 
 export class ResultViewer {

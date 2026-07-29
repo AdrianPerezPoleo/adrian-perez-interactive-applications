@@ -5,7 +5,6 @@
  * Programación de Aplicaciones Interactivas
  * @author Adrián Pérez Poleo
  * @since Apr 25, 2026
- * @description Program that implements the Hangman Game using the MVC pattern.
  */
 
 export class HangmanImageRender {

@@ -19,7 +19,7 @@ export class ConsumableDisplay {
 
   /**
    * Creates a new Consumable Display.
-   * @param containerId Id of the container where the hand will be displayed.
+   * @param container Id of the container where the hand will be displayed.
    * @param maxConsumables Maximum number of consumables.
    */
   constructor(container: HTMLDivElement, maxConsumables: number = 2) {   

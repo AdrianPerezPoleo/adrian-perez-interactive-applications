@@ -19,7 +19,7 @@ export class JokerDisplay {
 
   /**
    * Creates a new Joker Display.
-   * @param containerId Id of the container where the hand will be displayed.
+   * @param container Id of the container where the hand will be displayed.
    * @param maxJokers Maximum number of jokers.
    */
   constructor(container: HTMLDivElement, maxJokers: number = 5) {

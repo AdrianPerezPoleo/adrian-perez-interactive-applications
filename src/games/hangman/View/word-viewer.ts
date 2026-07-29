@@ -5,7 +5,6 @@
  * Programación de Aplicaciones Interactivas
  * @author Adrián Pérez Poleo
  * @since Apr 25, 2026
- * @description Class that displays a word on the screen, where each character is in a cell.
  */
 
 export class WordViewer {
