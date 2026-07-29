@@ -1,74 +1,78 @@
-# Software Engineering Portfolio: Interactive TypeScript Applications
+# Portfolio de Ingeniería de Software: Aplicaciones Interactivas en TypeScript
 
-Welcome to my Software Engineering portfolio. This repository contains a collection of interactive web applications, mathematical visualizers, and games developed entirely in **Vanilla TypeScript**. 
+Este repositorio contiene una colección de aplicaciones web interactivas, visualizadores matemáticos y juegos desarrollados en **TypeScript puro (Vanilla TypeScript)**.
 
-The core focus of this project is the rigorous application of **Object-Oriented Programming (OOP) principles**, **SOLID design patterns**, and a strict **Model-View-Controller (MVC)** architecture. By avoiding heavy frameworks for the logic, these projects demonstrate a deep understanding of software design, event-driven programming, and DOM/Canvas manipulation.
-
----
-
-## Architecture & Tech Stack
-
-All applications in this repository share a unified, scalable infrastructure:
-
-* **Language:** TypeScript (Strict mode).
-* **Architecture:** MVC Pattern & Event-Driven Architecture (Observer Pattern).
-* **Build Tool:** Vite (configured for Multi-Page Application routing).
-* **Styling:** Bulma CSS Framework (Strictly utilizing native classes, avoiding inline flexbox utilities for consistent layout design).
-* **Rendering:** HTML5 Canvas API & DOM manipulation.
-* **Documentation:** TypeDoc & JSDoc (Automatically generated API docs).
+El enfoque de este proyecto es la aplicación de los **principios de Programación Orientada a Objetos (POO)**, los **patrones de diseño SOLID** y la arquitectura **Modelo-Vista-Controlador (MVC)**. Como no se usan frameworks pesados para la lógica, demuestran una buena comprensión del diseño de software, la programación orientada a eventos y la manipulación del DOM y el Canvas.
 
 ---
 
-## Included Projects
+## Arquitectura y Tecnologías
 
-The portfolio is semantically divided into two main categories: Interactive Games and Mathematical Visualizers. 
+Todas las aplicaciones en este repositorio comparten la misma estructura:
 
-### Interactive Games
-Implementations of classic games focusing on state management, user interaction, and UI rendering.
-
-* **Hangman Game:** A classic word-guessing game featuring dynamic canvas drawing. It implements a strict event-driven architecture to decouple user input from the rendering logic.
-* **8-Puzzle:** A sliding puzzle implementing state-space search concepts. It focuses on matrix manipulation, state validation, and dynamic DOM updates.
-* **MiniBalatro:** A lightweight implementation of poker-based mechanics, focusing on rule validation and scoring algorithms.
-
-### Mathematical Visualizers
-Applications designed to render mathematical concepts and physics simulations dynamically using the Canvas API.
-
-* **Trapezoidal Rule Calculator:** An interactive tool to approximate the definite integral of mathematical functions. It parses user-defined functions and draws the corresponding area approximations in real-time.
-* **Projectile Animation:** A physics-based kinematics simulator calculating and rendering 2D trajectories based on initial velocity, angle, and height.
-* **Lissajous Curves:** Visualization of complex harmonic motions, graphing the system of parametric equations describing complex pendulum motion.
+* **Lenguaje:** TypeScript.
+* **Arquitectura:** Patrón MVC y Arquitectura Orientada a Eventos (Patrón Observer).
+* **Herramienta de Construcción:** Vite.
+* **Estilos:** Framework CSS Bulma.
+* **Renderizado:** API de HTML5 Canvas y manipulación del DOM.
+* **Documentación:** TypeDoc.
 
 ---
 
-## Getting Started
+## Proyectos Incluidos
 
-To explore the code and run the portfolio locally, follow these steps:
+El portfolio está dividido en dos categorías: Juegos Interactivos y Visualizadores Matemáticos.
 
-### 1. Clone the repository
+### Juegos Interactivos
+
+Implementaciones de juegos clásicos.
+
+* **Juego del Ahorcado (Hangman):** Clásico juego de adivinar palabras que incluye dibujo dinámico en el canvas. 
+* **8-Puzzle:** Un rompecabezas deslizante que implementa conceptos de búsqueda en el espacio de estados. Se centra en la manipulación de matrices, validación del estado y actualizaciones dinámicas del DOM.
+* **MiniBalatro:** Una implementación ligera de mecánicas basadas en el póker, centrada en la validación de reglas y algoritmos de puntuación.
+
+### Visualizadores Matemáticos
+
+Aplicaciones diseñadas para renderizar conceptos matemáticos y simulaciones físicas de forma dinámica utilizando la API del Canvas.
+
+* **Calculadora de la Regla Trapezoidal:** Una herramienta interactiva para aproximar la integral definida de funciones matemáticas. Analiza funciones definidas por el usuario y dibuja las aproximaciones de área correspondientes en tiempo real.
+* **Animación de Proyectil:** Un simulador de cinemática basado en física que calcula y renderiza trayectorias en 2D basadas en la velocidad inicial, ángulo y altura.
+* **Curvas de Lissajous:** Visualización de movimientos armónicos, mostrando en una gráfica el sistema de ecuaciones paramétricas que describen el movimiento complejo de un péndulo.
+
+---
+
+## Guía de Inicio
+
+Para explorar el código y ejecutar el portfolio localmente, siga estos pasos:
+
+### 1. Clonar el repositorio
+
 ```bash
-git clone [https://github.com/tu-usuario/adrian-perez-interactive-applications.git](https://github.com/tu-usuario/adrian-perez-interactive-applications.git)
+git clone https://github.com/AdrianPerezPoleo/adrian-perez-interactive-applications.git
 cd adrian-perez-interactive-applications
+```
 
-### 2. Install dependencies
+### 2. Instalar dependencias
 
-This project uses a single, unified `package.json` to manage all dependencies globally.
+Este proyecto utiliza un único `package.json` para gestionar todas las dependencias globalmente.
 
 ```bash
 npm install
 ```
 
-### 3. Run the Development Server
+### 3. Ejecutar el servidor de desarrollo
 
-Launch the Vite server to explore the applications interactively:
+Inicie el servidor de Vite para explorar las aplicaciones de forma interactiva:
 
 ```bash
 npm run dev
 ```
 
-Navigate to the provided `localhost` URL (usually `http://localhost:5173/`) in your browser to view the main menu.
+Navegue a la URL `localhost` proporcionada en su navegador para ver el menú principal.
 
-### 4. Build & Generate Documentation
+### 4. Construir y generar la documentación
 
-To compile the TypeScript code and generate the TypeDoc API documentation in the `dist/docs/` folder:
+Para compilar el código TypeScript y generar la documentación de la API con TypeDoc en la carpeta `dist/docs/`:
 
 ```bash
 npm run build:all
@@ -76,14 +80,14 @@ npm run build:all
 
 ---
 
-## Author
+## Autor
 
 **Adrián Pérez Poleo**
 
-* Computer Engineering Student at [Universidad de La Laguna (ULL)](https://www.ull.es/)
-* Contact: alu0101635224@ull.edu.es
-* [LinkedIn Profile](https://www.linkedin.com/in/adrián-pérez-poleo-2a7639378)
+* Estudiante de Ingeniería Informática en la [Universidad de La Laguna (ULL)](https://www.ull.es/)
+* Contacto: alu0101635224@ull.edu.es
+* [Perfil de LinkedIn](https://www.linkedin.com/in/adrián-pérez-poleo-2a7639378)
 
-## License
+## Licencia
 
-This project is open source and available under the [MIT License](https://www.google.com/search?q=LICENSE).
+Este proyecto es de código abierto y está disponible bajo la [Licencia MIT](https://www.google.com/search?q=LICENSE).
