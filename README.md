@@ -1,5 +1,7 @@
 # Portfolio de Ingeniería de Software: Aplicaciones Interactivas en TypeScript
 
+**[Ver demostración (GitHub Pages)](https://adrianperezpoleo.github.io/adrian-perez-interactive-applications/)**
+
 Este repositorio contiene una colección de aplicaciones web interactivas, visualizadores matemáticos y juegos desarrollados en **TypeScript puro (Vanilla TypeScript)**.
 
 El enfoque de este proyecto es la aplicación de los **principios de Programación Orientada a Objetos (POO)**, los **patrones de diseño SOLID** y la arquitectura **Modelo-Vista-Controlador (MVC)**. Como no se usan frameworks pesados para la lógica, demuestran una buena comprensión del diseño de software, la programación orientada a eventos y la manipulación del DOM y el Canvas.
